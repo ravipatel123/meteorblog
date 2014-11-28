@@ -1,8 +1,15 @@
-<template name="main_layout">
-	
+<template name="layout">
+
+  {{> header}}
+
+  {{> sidebar}}
+
+  <div id="wrapper">
+    <div id="page-wrapper">
+        <div class="container-fluid">
+					{{> yield}}
+				</div>
+		</div>
+	</div>
+
 </template>
-<body>
-	{{> header}}
-	{{> sidebar}}
-	
-</body>
